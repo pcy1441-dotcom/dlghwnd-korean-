@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#121826">
+  <title>My WAV Player</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      background: #121826;
+      color: #f1f5f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 520px;
+      margin: 30px auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #94a3b8;
+      margin-bottom: 28px;
+    }
+
+    .track {
+      background: #202a3b;
+      padding: 18px;
+      margin-bottom: 14px;
+      border-radius: 16px;
+    }
+
+    .track h3 {
+      margin: 0 0 14px;
+      overflow-wrap: anywhere;
+    }
+
+    audio {
+      width: 100%;
+      margin-bottom: 12px;
+    }
+
+    .download {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 9px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .download:hover {
+      background: #2563eb;
+    }
+
+    footer {
+      text-align: center;
+      color: #64748b;
+      font-size: 12px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <h1>🎵 My Music</h1>
+    <p class="subtitle">나만의 음악 플레이어</p>
+
+    <section class="track">
+      <h3>🎧 음악 1</h3>
+      <audio controls preload="none">
+        <source src="겨울왕국 앰알.mp3" type="audio/mpeg">
+        오디오 재생을 지원하지 않는 브라우저야.
+      </audio>
+      <a class="download" href="audio1.mp3" download>
+        ⬇ 다운로드
+      </a>
+    </section>
+
+    <section class="track">
+      <h3>🎧 음악 2</h3>
+      <audio controls preload="none">
+        <source src="국가대표 엠알.mp3" type="audio/mpeg">
+      </audio>
+      <a class="download" href="audio2.mp3" download>
+        ⬇ 다운로드
+      </a>
+    </section>
+
+    <section class="track">
+      <h3>🎧 음악 3</h3>
+      <audio controls preload="none">
+        <source src="올슉업 엠알 편집.mp3" type="audio/mpeg">
+      </audio>
+      <a class="download" href="audio3.mp3" download>
+        ⬇ 다운로드
+      </a>
+    </section>
+
+    <section class="track">
+      <h3>🎧 음악 4</h3>
+      <audio controls preload="none">
+        <source src="지저스 웨이브 편집엠알.mp3" type="audio/mpeg">
+      </audio>
+      <a class="download" href="audio4.mp3" download>
+        ⬇ 다운로드
+      </a>
+    </section>
+
+    <footer>My Music Player · GitHub Pages</footer>
+  </main>
+</body>
+</html>
